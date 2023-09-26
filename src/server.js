@@ -7,7 +7,8 @@ const init = async () => {
   });
 
   await server.start();
-  console.log('Server berjalan pada ${server.info.uri');
+  // eslint-disable-next-line no-template-curly-in-string
+  console.log(`Server berjalan pada ${server.info.uri}`);
 };
 
 init();
